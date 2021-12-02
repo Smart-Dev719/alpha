@@ -18,7 +18,7 @@
 
 
 
-#unstaketable:active {
+#table:active {
     color:white;
     background-color: #0d6efd;
 }
@@ -148,3 +148,7 @@ thead th:first-child{border-top-left-radius: 10px;}
 thead th:last-child{border-top-right-radius: 10px;}
 tbody tr:last-child>td:first-child{border-bottom-left-radius: 10px;}
 tbody tr:last-child>td:last-child{border-bottom-right-radius: 10px;}
+
+btn w-100 mt-5 button.active{
+    background-color: #0d6efd;
+}
