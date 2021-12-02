@@ -86,4 +86,7 @@ body {
     .navbar {
         background-color: #0000006e;
     }
+    #stake {
+        margin-top: 17rem !important;
+    }
 }

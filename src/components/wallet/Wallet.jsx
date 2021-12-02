@@ -40,7 +40,7 @@ function Wallet() {
         <Row className="justify-content-center">
           <Col lg="8">
             <Row className="align-items-center">
-              <Col lg={12} className="order-2 order-lg-1 mt-5 mt-lg-0">
+              <Col lg={12} className="order-2 order-lg-1 mt-5 mt-lg-0" id="stake">
                 <div className="wallet-content">
                   <div className="wallet-tab">
                     <ul className="d-flex">
@@ -178,7 +178,7 @@ function Wallet() {
                   <div className="wallet-content1">
                     <h4 style={{color: "white" ,fontSize: "23px"}}>Your Stats</h4>
                     <div id="showtable" style={{ overflow: "auto", height: "400px" }}>
-                      <table class="table table-sm table-bordered mb-0 mt-4" id="tabs">
+                      <table class="table table-sm table-bordered flexible-bottom-content1 mb-0 mt-4" id="tabs">
                         <thead>
                           <tr >
                             {/* <th style={{ color: "white",textAlign:"center"}}>Id </th> */}
