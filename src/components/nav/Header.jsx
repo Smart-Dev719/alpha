@@ -15,7 +15,7 @@ function Header() {
 				<Container fluid>
 					<div className="d-lg-flex justify-content-between align-items-center w-100">
 						<div className="d-flex align-content-center justify-content-between">
-							<Navbar.Brand href="#home">
+							<Navbar.Brand href="/">
 								<img className="logo" src={Logo} alt="" />
 							</Navbar.Brand>
 							<Navbar.Toggle aria-controls="basic-navbar-nav">
