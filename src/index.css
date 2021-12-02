@@ -72,7 +72,7 @@ body {
     position:absolute !important;
     width: -webkit-fill-available;
     top:0;
-    background-color: #12121c;
+    /* background-color: #12121c; */
 }
 
 

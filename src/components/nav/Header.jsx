@@ -54,19 +54,19 @@ function Header() {
 								</Nav.Link>
 							</Nav> */}
 							<Nav className="mt-1 mt-lg-0 w-100" style={{justifyContent : "flex-end", alignItem:"center"}}>
-								<Nav.Link href="/" style={{ fontSize: "2rem", lineHeight : "37px" }}>
+								<Nav.Link href="/" style={{ fontSize: "18px", lineHeight : "37px", marginRight:"14px", textDecoration:"none" }}>
 									Home
 								</Nav.Link>
 								<Nav.Link
 									href="/stack"
-									style={{ fontSize: "2rem", lineHeight : "37px" }}
+									style={{ fontSize: "18px", lineHeight : "37px", marginRight:"14px", textDecoration:"none" }}
 								>
 									Stake
 								</Nav.Link>
 
 								<Nav.Link
 									href="/alpha"
-									style={{ fontSize: "2rem", lineHeight : "37px" }}
+									style={{ fontSize: "18px", lineHeight : "37px", marginRight:"50px", textDecoration:"none" }}
 								>
 									Public Sale
 								</Nav.Link>
@@ -91,7 +91,9 @@ function Header() {
 											<ul className="menu_2dd" id="walletbuttons1">
 
 												<li id="walletconnectbutton">
-													<Nav.Link onClick={window.unlockWallet} id="metamask" className="btn btn-site">Metamask Connect</Nav.Link>
+													<Nav.Link onClick={window.unlockWallet} id="metamask" 
+													style={{ outline:"none" }}
+													className="btn btn-site">Metamask Connect</Nav.Link>
 													<img className="walletIcon_mini" src={metamaskicon} alt="" />
 												</li>
 											</ul>

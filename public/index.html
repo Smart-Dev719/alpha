@@ -95,22 +95,22 @@
   }
   check()
   
-  // var unlockWallet = () => {
-  //   if (typeof web3 !== 'undefined') {
-  //     web3.givenProvider.enable().then(async function (address) {
-  //       if (await web3.eth.net.getNetworkType().then() == "private") {         
-  //           $('#metamask').html(window.ethereum.selectedAddress);   
-  //           let address=document.getElementById('metamask');
-  //           address.innerHTML=address.innerHTML.substring(0, 4)+'...'+address.innerHTML.slice(-4);
-  //           ref();
-  //       } else {
-  //         Swal.fire({title: "<h5 style='color:white'>Please Select Binance Testnet Network</h5>",  icon: "warning", background:"#808080",  showConfirmButton: false, timer:1000})         
-  //       }
-  //     }).catch(function (err) { Swal.fire({title: "<h5 style='color:white'>Unlock your wallet</h5>",  icon: "warning", background:"#808080",  showConfirmButton: false, timer:1000}) });
-  //   } else {
-  //     Swal.fire({title: "<h5 style='color:white'>Please Install Metamask Wallet</h5>",  icon: "warning", background:"#808080",  showConfirmButton: false, timer:1000})
-  //   }
-  // }
+  var unlockWallet = () => {
+    if (typeof web3 !== 'undefined') {
+      web3.givenProvider.enable().then(async function (address) {
+        if (await web3.eth.net.getNetworkType().then() == "private") {         
+            $('#metamask').html(window.ethereum.selectedAddress);   
+            let address=document.getElementById('metamask');
+            address.innerHTML=address.innerHTML.substring(0, 4)+'...'+address.innerHTML.slice(-4);
+            ref();
+        } else {
+          Swal.fire({title: "<h5 style='color:white'>Please Select Binance Testnet Network</h5>",  icon: "warning", background:"#808080",  showConfirmButton: false, timer:1000})         
+        }
+      }).catch(function (err) { Swal.fire({title: "<h5 style='color:white'>Unlock your wallet</h5>",  icon: "warning", background:"#808080",  showConfirmButton: false, timer:1000}) });
+    } else {
+      Swal.fire({title: "<h5 style='color:white'>Please Install Metamask Wallet</h5>",  icon: "warning", background:"#808080",  showConfirmButton: false, timer:1000})
+    }
+  }
 
   var refresh = async () => {
     if (await web3.eth.net.getNetworkType().then() != "private" || walletaddress == null) {
