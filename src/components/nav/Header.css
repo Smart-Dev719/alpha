@@ -1,0 +1,134 @@
+.navbar-box {
+    border-bottom: 1px solid #222;
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+.logo {
+    width: 134px;
+    border-radius: 5px;
+}
+
+.navbar-box .navbar-nav a {
+    color: #fff !important;
+}
+
+.navbar-nav {
+    margin: 0 !important;
+}
+
+.navbar-wallet-btn {
+    border: 3px solid #202130;
+    background-color: #252839;
+    border-radius: .625rem;
+    padding: 8px 20px !important;
+}
+
+.navbar-wallet-btn:hover {
+    background-color: rgba(37, 40, 57, .8);
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+    z-index: 999999999;
+  }
+  ul.menu_2dd {
+      padding: 30px 0;
+      text-align: center;
+  }
+  .popup {
+    margin: 150px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    max-width: 506px;
+    position: relative;
+    /*transition: all 5s ease-in-out;*/
+  }
+  
+  .popup h2 {
+    color: #000;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  #popup1 .popup .close {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    transition: all 200ms;
+    font-size: 40px;
+    font-weight: 50;
+    text-decoration: none;
+    color: #000 !important;
+  }
+  .popup .close:hover {
+    color: #06D85F;
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+  
+  @media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+    max-width: 506px;
+    }
+  }
+  @media screen and (max-width: 500px){
+    .popup{
+      margin: 150px 15px 150px 15px !important;
+      max-width: 100% !important;  
+    }
+    ul.menu_2dd {
+      text-align: center !important;
+  }
+  }
+#connect{
+    border-radius: 0.775rem !important;
+    font-size: 1.50rem !important;
+    line-height: 1.5rem !important;
+    font-weight: 500 !important;
+    padding: 1.7rem 3.5rem !important;
+    border-color: transparent !important;
+    background: #0d6efd;
+    outline: none;
+    box-shadow: none;
+}
+#walletbuttons1 {
+    padding: 10px 10px;
+    text-align: center;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    background-color: #cccccc8c;
+    margin: 40px 0;
+}
+#walletconnect {
+    font-size: 20px;
+    color: #000 !important;
+    float: left;
+    width: 65%;
+    text-align: left;
+}
+#metamask {
+  font-size: 20px;
+  color: #000 !important;
+  float: left;
+  width: 65%;
+  text-align: left;
+}
+.walletIcon_mini {
+    width: 40px;
+}
